@@ -14,9 +14,18 @@ for(;i<n; i++)
         k++;
     }
 }
+k=0;
 Console.Write("[");
 foreach(string value in Result)
 {
-    Console.Write($" {value}"); 
+    if(value!=null)
+    {
+        Console.Write($" '{value}'"); 
+        if(Result[k+1]!=null)
+        {
+            Console.Write(",");
+        }
+        k++;
+    }
 }
 Console.Write("]");
