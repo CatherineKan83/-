@@ -14,3 +14,13 @@ for(;i<n; i++)
         k++;
     }
 }
+Console.Write("[");
+foreach(string value in Result)
+{
+    if(Result[k]!="")
+    {
+        Console.Write($" {value}"); 
+    }
+    else break;
+}
+Console.Write("]");
