@@ -5,3 +5,12 @@ string []Result = new string[n];
 int k=0;
 int i=0;
 Console.Write("Введите элементы массива(не обязательно числа): ");
+for(;i<n; i++)
+{
+    First[i]=$"{Console.ReadLine()}";
+    if(First[i].Length<=3)
+    {
+        Result[k]=First[i];
+        k++;
+    }
+}
